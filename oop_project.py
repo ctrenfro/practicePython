@@ -1,4 +1,4 @@
-from bank_accounts import BankAccount
+from bank_accounts import BankAccount, InterestRewardsAcct, SavingsAcct
 
 
 Dave = BankAccount(1000, "Dave")
@@ -15,3 +15,22 @@ Dave.withdraw(10)
 
 Dave.transfer(10000, Sara)
 Dave.transfer(100, Sara)
+
+
+Jim = InterestRewardsAcct(1000, "Jim")
+
+Jim.getBalance()
+
+Jim.deposit(100)
+
+Jim.transfer(100, Dave)
+
+Jim.getBalance()
+
+Blaze = SavingsAcct(1000, "Blaze")
+
+Blaze.getBalance()
+
+Blaze.deposit(100)
+
+Blaze.transfer(10000, Sara)
